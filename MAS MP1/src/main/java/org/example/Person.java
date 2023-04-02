@@ -8,15 +8,14 @@ import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
+
 @RequiredArgsConstructor
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @Getter
 class Person implements Serializable {
 
-    static List<Person> EXTENSIONS = new ArrayList<>();
+    static Set<Person> CACHE = new HashSet<>();
 
     UUID id;
 
@@ -28,5 +27,14 @@ class Person implements Serializable {
     @NonFinal
     @Setter
     String email;
+
+    Person(String name, String surname, List<Address> addressList, String email) {
+        this.id = UUID.randomUUID();
+        this.name = name;
+        this.surname = surname;
+        this.addressList = addressList;
+        this.email = email;
+        CACHE.add(this);
+    }
 
 }

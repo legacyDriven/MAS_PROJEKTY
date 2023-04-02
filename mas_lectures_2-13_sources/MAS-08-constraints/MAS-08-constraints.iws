@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fbb38faa-b9e4-4ee4-8d4f-ef9acfa35f78" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Created on</find>
+      <find>MariuszAdmin</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Mariusz</replace>
+    </replaceStrings>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1216" />
+  </component>
+  <component name="ProjectId" id="1tGOodKqxrRKSKKRccAI4nqH1OZ" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551544975587" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager" selected="Application.MAS_08">
+    <configuration name="MAS_06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mt.mas.MAS_06" />
+      <module name="MAS-06-associations" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mt.mas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MAS_08" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mt.mas.MAS_08" />
+      <module name="MAS-08-constraints" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mt.mas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MAS_08" />
+        <item itemvalue="Application.MAS_06" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fbb38faa-b9e4-4ee4-8d4f-ef9acfa35f78" name="Default Changelist" comment="" />
+      <created>1550776859629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550776859629</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="986" y="342" key="#com.intellij.ide.util.MemberChooser" timestamp="1622392322274">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="986" y="342" key="#com.intellij.ide.util.MemberChooser/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392322274" />
+    <state width="2505" height="482" key="GridCell.Tab.0.bottom" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.0.bottom/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.0.center" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.0.center/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.0.left" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.0.left/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.0.right" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.0.right/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.1.bottom" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.1.bottom/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.1.center" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.1.center/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.1.left" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.1.left/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+    <state width="2505" height="482" key="GridCell.Tab.1.right" timestamp="1622392943498">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2505" height="482" key="GridCell.Tab.1.right/3840.0.1920.1200/-1920.0.1920.1200/0.0.2560.1440@0.0.2560.1440" timestamp="1622392943498" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MAS-08-constraints</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
