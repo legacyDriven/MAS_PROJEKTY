@@ -1,9 +1,6 @@
 package org.example;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
 
@@ -14,6 +11,7 @@ import java.util.Set;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @AllArgsConstructor
 @Getter
+@Builder
 class Address implements Serializable {
 
     private static final Set<Address> CACHE = new HashSet<>();
@@ -30,6 +28,6 @@ class Address implements Serializable {
 
     @NonFinal
     @Setter
-    boolean currentAddress;
+    boolean validAddress;
 
 }
