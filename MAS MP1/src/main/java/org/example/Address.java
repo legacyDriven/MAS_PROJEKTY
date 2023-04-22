@@ -22,6 +22,8 @@ class Address implements Serializable {
 
     String street;
 
+    String postalCode;
+
     Integer houseNumber;
 
     Integer apartmentNumber;
@@ -30,4 +32,14 @@ class Address implements Serializable {
     @Setter
     boolean validAddress;
 
+    public Address(String country, String city, String street, String postalCode, Integer houseNumber) {
+        this.country = country;
+        this.city = city;
+        this.street = street;
+        this.postalCode = postalCode;
+        this.houseNumber = houseNumber;
+        this.apartmentNumber = null;
+        this.validAddress = true;
+        CACHE.add(this);
+    }
 }

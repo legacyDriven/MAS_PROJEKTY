@@ -34,7 +34,7 @@ class Person implements Serializable {
 
     // atrybut pochodny
     public int getAge() {
-        if(birthDate == null)
+        if(birthDate != null)
             return LocalDate.now().getYear() - birthDate.getYear();
         else
             return 0;
@@ -122,4 +122,11 @@ class Person implements Serializable {
                 ", birthDate=" + birthDate +
                 '}';
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+
 }
