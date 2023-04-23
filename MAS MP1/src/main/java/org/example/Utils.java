@@ -3,7 +3,6 @@ package org.example;
 import java.io.*;
 import java.util.Set;
 
-import static org.example.Person.getPersonBasicInfo;
 
 public class Utils {
 

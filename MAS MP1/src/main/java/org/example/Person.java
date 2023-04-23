@@ -5,7 +5,6 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -126,7 +125,7 @@ class Person implements Serializable {
                 '}';
     }
 
-    public static String getPersonBasicInfo(Person person) {
+    private static String getPersonBasicInfo(Person person) {
         return "Person{" +
                 "id=" + person.id +
                 ", name='" + person.name + '\'' +
@@ -134,14 +133,14 @@ class Person implements Serializable {
                 '}';
     }
 
-    //przesloniecie metody
+    //przeciazenie  metody
     public static void showPersonsInfoFromLocalCache() {
         for(Person person : Person.CACHE) {
             System.out.println(getPersonBasicInfo(person));
         }
     }
 
-    //przesloniecie metody
+    //przeciazenie metody
     public static void showPersonsInfoFromLocalCache(Boolean showDetailedInfo) {
         for(Person person : Person.CACHE) {
             System.out.println(person);
