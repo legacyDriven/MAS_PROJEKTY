@@ -12,6 +12,8 @@ import java.util.Set;
 @AllArgsConstructor
 @Getter
 @Builder
+@ToString
+@EqualsAndHashCode
 class Address implements Serializable {
 
     private static final Set<Address> CACHE = new HashSet<>();
@@ -21,8 +23,6 @@ class Address implements Serializable {
     String city;
 
     String street;
-
-    String postalCode;
 
     Integer houseNumber;
 
@@ -36,7 +36,6 @@ class Address implements Serializable {
         this.country = country;
         this.city = city;
         this.street = street;
-        this.postalCode = postalCode;
         this.houseNumber = houseNumber;
         this.apartmentNumber = null;
         this.validAddress = true;

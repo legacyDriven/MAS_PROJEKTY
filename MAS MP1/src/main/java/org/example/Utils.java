@@ -1,10 +1,9 @@
 package org.example;
 
-import lombok.SneakyThrows;
-
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Set;
+
+import static org.example.Person.getPersonBasicInfo;
 
 public class Utils {
 
@@ -12,29 +11,44 @@ public class Utils {
        throw new AssertionError("Cannot create instance of utility class");
     }
 
-    //serializacja person do pliku
-    public static void serializePersons(List<Person> persons, String fileName) throws IOException {
-        try (FileOutputStream fileOut = new FileOutputStream(fileName);
+    public static void serializePersonsFromLocalCache() throws IOException {
+        File file = new File("src/main/resources/persons.ser");
+        if (!file.exists()) {
+            file.getParentFile().mkdirs(); // Tworzy katalogi, jeśli nie istnieją
+            file.createNewFile(); // Tworzy plik
+        }
+
+        try (FileOutputStream fileOut = new FileOutputStream(file);
              ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             // Serializacja kolekcji obiektów Person do pliku
-            out.writeObject(persons);
+            out.writeObject(Person.CACHE);
         }
     }
 
-    //deserializacja person z pliku
-    public static List<Person> deserializePersons(String fileName) throws IOException, ClassNotFoundException {
-        List<Person> persons = new ArrayList<>();
+    public static Set<Person> deserializePersons() throws IOException, ClassNotFoundException {
+        Set<Person> persons;
 
-        try (FileInputStream fileIn = new FileInputStream(fileName);
+        try (FileInputStream fileIn = new FileInputStream("src/main/resources/persons.ser");
              ObjectInputStream in = new ObjectInputStream(fileIn)) {
-
-            while (fileIn.available() > 0) {
-                // Odczytanie obiektu Person z pliku i deserializacja
-                Person person = (Person) in.readObject();
-                persons.add(person);
-            }
+            persons = (Set<Person>) in.readObject();
         }
+        Person.CACHE.addAll(persons);
         return persons;
     }
 
+    public static void generatePerson() {
+        Person.generatePerson();
+    }
+
+    public static void showPersonsBasicInfoFromLocalCache() {
+        Person.showPersonsInfoFromLocalCache();
+    }
+
+    public static void showPersonsDetailedInfoFromLocalCache() {
+        Person.showPersonsInfoFromLocalCache(true);
+    }
+
+    public static void clearLocalCache() {
+        Person.CACHE.clear();
+    }
 }

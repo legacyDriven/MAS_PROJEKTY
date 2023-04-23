@@ -1,10 +1,11 @@
 package org.example;
 
-import com.github.javafaker.Faker;
+
+import lombok.SneakyThrows;
 
 public class Application {
-    public static void main(String[] args)
-    {
-
+    @SneakyThrows
+    public static void main(String[] args) {
+        UserInterface.unitUI();
     }
 }

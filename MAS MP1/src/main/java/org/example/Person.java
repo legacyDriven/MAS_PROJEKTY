@@ -5,6 +5,7 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.NonFinal;
 
+import java.io.IOException;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -13,6 +14,8 @@ import java.util.*;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 @Getter
 @Builder
+@AllArgsConstructor
+@EqualsAndHashCode
 class Person implements Serializable {
 
     // atrybut klasowy
@@ -61,11 +64,11 @@ class Person implements Serializable {
         this.name = name;
         this.surname = surname;
         this.addressList = addressList;
+        this.birthDate = null;
         CACHE.add(this);
     }
 
     // przeciążenie konstruktora
-
     public Person(String name, String surname, List<Address> addressList, LocalDate birthDate) {
         this.id = UUID.randomUUID();
         this.name = name;
@@ -106,7 +109,7 @@ class Person implements Serializable {
                 .addressList(addressList)
                 .birthDate(faker.date().birthday().toInstant().atZone(ZoneId.systemDefault()).toLocalDate())
                 .build();
-        System.out.println("Generating Person object: " + person);
+        System.out.println("Generating Person object: " + Person.getPersonBasicInfo(person));
         CACHE.add(person);
         return person;
     }
@@ -123,10 +126,26 @@ class Person implements Serializable {
                 '}';
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
+    public static String getPersonBasicInfo(Person person) {
+        return "Person{" +
+                "id=" + person.id +
+                ", name='" + person.name + '\'' +
+                ", surname='" + person.surname + '\'' +
+                '}';
     }
 
+    //przesloniecie metody
+    public static void showPersonsInfoFromLocalCache() {
+        for(Person person : Person.CACHE) {
+            System.out.println(getPersonBasicInfo(person));
+        }
+    }
+
+    //przesloniecie metody
+    public static void showPersonsInfoFromLocalCache(Boolean showDetailedInfo) {
+        for(Person person : Person.CACHE) {
+            System.out.println(person);
+        }
+    }
 
 }
