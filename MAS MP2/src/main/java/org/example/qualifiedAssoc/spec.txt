@@ -1,0 +1,7 @@
+Asocjacja kwalifikowana
+Wyróżnia się ona kwalifikatorem, czyli atrybutem,
+który pozwala na jednoznaczne zidentyfikowanie elementu relacji.
+Wykonuje się to za pomocą mapy lub słownika.
+
+Ad. 3
+Gdy usuwamy całość należy pierw przeliterować części aby je usunąć, a potem dopiero usunąć całość.

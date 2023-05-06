@@ -1,0 +1,11 @@
+Asocjacja z Atrybutem
+Ten typ asocjacji to specjalna odmiana typowej relacji wiele-do-wielu.
+Różnica polega na tym, że tabela asocjacyjna niezbędna do utrzymania relacji zamienia się w klasę asocjacyjną,
+która jest pełnoprawną klasą biznesową. Klasa asocjacyjna musi posiadać odniesienie do obu końcow relacji oraz
+przechowywać odpowiednie atrybuty.
+
+Przykład: Chcemy przechować historię zatrudnienia osoby w firmach.
+Jest to przykład asocjacji z atrybutem między Pracownik - Firma,
+gdzie klasą asocjacyjną jest Historia trzymająca datę zatrudnienia od do.
+
+Przed dodaniem części do całości należy upewnić się, że taka część nie istnieje już w ekstensji.

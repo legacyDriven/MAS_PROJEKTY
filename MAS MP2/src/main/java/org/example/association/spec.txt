@@ -1,0 +1,17 @@
+Asocjacje
+Dokument ten zawiera wytyczne dotyczące drugiego mini-projektu. Jego zakres obejmuje asocjacje.
+
+„Zwykła”
+
+Jest to nic innego jak najprostsza relacja między dwoma klasami. Każda asocjacja może mieć swoją licznosć.
+Liczność określa ile elementów może/musi być z każdej ze stron asocjacji.
+Od strony programistycznej nie wymaga ona żadnych dodatkowych zabiegów.
+Załóżmy, że mamy klasę Klient oraz Zamówienie. Jeden klient może mieć wiele zamówień.
+
+Ad.1
+Tworzymy prywatny konstruktor tak, aby nie można było stworzyć obiektu samodzielnie.
+Mówimy tu oczywiście o konstruktorze części czyli w naszym przykładzie dla klasy Sala.
+Następnie tworzymy metodę tworzącą część. Powinna być statyczna, publiczna i umieszczona w klasie sali.
+Metoda przyjmuje jako parametr obiekt całości (budynek) oraz parametry obowiązkowe.
+W tej metodzie następuje utworzenie obiektu, powiązanie go z całością i zwrócenie.
+Również w tej metodzie należy dodać część do odpowiedniej kolekcji w ramach klasy całości.

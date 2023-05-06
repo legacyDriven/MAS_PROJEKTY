@@ -1,0 +1,9 @@
+Kompozycja
+Kluczowe jest trzymanie się trzech zasad kompozycji:
+1. nie ma części bez całości
+2. Cześć nie może być współdzielona
+3. Usunięcie całości powoduje usunięcie wszystkich części
+Doskonałym przykładem kompozycji jest budynek i sale które w nim się znajdują.
+Budynek może istnieć bez sal. Jest to pusta bryła w środku, ale jest to pełnoprawny budynek.
+Sala z kolei nie może istnieć bez budynku bo jest jego integralną całością.
+Przedstawię najpopularniejsza formę tworzenia kompozycji.

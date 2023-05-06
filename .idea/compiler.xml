@@ -8,10 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MAS_Projekt1" />
+        <module name="MAS_Projekt2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MAS_Projekt1" target="17" />
+      <module name="MAS_Projekt2" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
