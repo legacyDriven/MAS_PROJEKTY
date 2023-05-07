@@ -1,0 +1,16 @@
+Wielodziedziczenie
+
+Wielodziedziczenie poza kilkoma wyjątkami jak np. C++ nie istnieje w programowaniu więc należy to obejść.
+Jedną z prostszych metod jest wykorzystanie interfejsów ponieważ tych możemy implementować w klasie ile chcemy.
+Załóżmy, że mamy klasy ElectricCar i CombustionCar. Do tego mamy klasę HybridCar która RÓWNOCZEŚNIE dziedziczy
+z obu nadklas. Aby to osiągnąć wybieramy nadklasę, która jest najmniej złożona i tworzymy odpowiedni interfejs,
+np. ICombustionCar. Ten interfejs implementujemy do dwóch klas: HybridCar i CumbustionCar.
+W HybridCar implementujemy interfejs dla zasymulowania dziedziczenia. Uzyskujemy klasę HybridCar która równocześnie
+jest typu ElectricCar i ICombustionCar. Teraz dla jeszcze wierniejszego symulowania dziedziczenie ten interfejs
+dodajmy również do klasy CombustionCar. Dzięki temu CombustionCar i HybridCar są tego samego typu ICombustionCar.
+
+Docelowo klasy powinny wyglądać tak:
+
+ElectricCar extends Car
+
+CombustionCar extends Car implements ICumbustionCar HybridCar extends ElectricCar implements ICumbustionCar

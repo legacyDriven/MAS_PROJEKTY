@@ -1,0 +1,23 @@
+Overlapping
+
+Istotą tego dziedziczenia jest fakt, że jeden obiekt może posiadać wiele wariantów, a konkretnie należeć do wielu typów.
+Wyobraźmy sobie taki scenariusz
+Public abstract class Person
+Public class Employee extends Person
+Public class Student extends Person
+
+Student może pracować na uczelni. Pracownik na uczelni może studiować. Tzn. Że każdy obiekt może należeć
+do obu typów równocześnie. Można wykonać to na jeden z dwóch sposobów.
+Pierwszy polega na tzw. Spłaszczeniu. Polega ono na usunięciu podklas (Employee, Student) i przeniesieniu
+ich metod oraz pól do nadklasy (Person). Oczywiście przy takim scenariuszu klasa Person przestaje być abstrakcyjna.
+Następnie tworzymy Enum który będzie definiować nam nasze typy (Employee, Student) a w klasie Person
+dodajemy EnumSet który przechowuje wybrane enumy. Enum służy Państwu do dodania weryfikacji w metodach dostępnych,
+aby upewnić się czy obiekt może pobrać wartość.
+Załóżmy, że Employee miał pole salary które przechowuje jego pensję. Jeśli dany obiekt w EnumSet
+nie ma wartości Employee to nie można pobrać jego pensji bo jej fizycznie nie posiada.
+Druga metoda dotyczy wykorzystania kompozycji. Każde dziedziczenie zamieniamy na kompozycję.
+O tym jakiego typu/typów dany obiekt jest decyduje to która kompozycja jest utworzona.
+Jeśli osoba jest dwóch typów obie kompozycje są utworzone. Tu należy pamiętać, że elementy,
+ które powinny być dziedziczone trzeba obsłużyć. Np. firstName I lastName musza się jakoś znaleźć
+ w klasie Employee skoro nie może ich pobrać z dziedziczenia. Można przez referencje,
+ można powielać pola zależy co w danej sytuacji jest lepsze.

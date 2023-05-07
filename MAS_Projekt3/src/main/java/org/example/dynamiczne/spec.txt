@@ -1,0 +1,16 @@
+Dynamiczne
+
+Na potrzeby dynamicznego posłużę się tym samym przykładem co w overlapping aby dobrze zobrazować Państwu różnicę.
+
+Abstract Person Employee extends Person Student extends Person
+
+Dziedziczenie dynamiczne polega na tym, że obiekt może zmieniać typ w trakcie działania programu,
+ale może być tylko jednego typu równocześnie. Dla przypomnienia overlapping dopuszcza posiadanie
+wielu typów równocześnie. Dlatego nie można i nie należy próbować prezentować tych dwóch dziedziczeń
+na jednym przykładzie. To nie działa wtedy prawidłowo.
+Zarówno metoda Employee jak i Student powinny zawierać konstruktor, który jako parametr przyjmuje obiekt drugiego typu
+
+Employee(Student student, [pola wymagane dla employe])  Student (Employee employee, [pola wymagane dla student])
+
+Następnie w konstruktorze przepisujemy wartości pól wspólnych, uzupełniamy pola wymagane i kasujemy stary obiekt.
+W ten sposób nasz obiekt zmienił typ dynamicznie.

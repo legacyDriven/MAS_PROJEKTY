@@ -1,0 +1,23 @@
+Wieloaspektowe
+
+Dziedziczenie wieloaspektowe jest bardzo specyficzne gdyż gałąź dziedziczenie zależy do aspektu.
+Tzn. Na diagramie UML nie traktujemy tego jako dwa dziedziczenie które mają miejsce równocześnie,
+a takie które zależy od aspektu na jaki patrzymy. W związku z tym jeśli mamy klasy 
+
+Abstract Person
+
+Employee extends Person
+Student extends Person
+
+Male extends Person
+Female extends Person
+
+Jak widzicie mamy 4 klasy które dziedziczą po klasie Person, ale te dziedziczenia istnieją
+tylko w zależności od kontekstu. Powinniśmy to rozumieć tak, że tylko 2 klasy dziedziczą równocześnie
+po Person co zakładam, że brzmi lekko nielogicznie. Skoro brzmi nielogicznie to jak to zaprogramować?
+Rozwiązane jest analogiczne jak przy overlapping tzn. Musimy się czegoś pozbyć.
+Wybieramy tą gałąź dziedziczenia, która jest dla nas najmniej problematyczna.
+W naszym przykładzie będzie to aspekt płci (drugi aspekt to zajęcie osoby). Teraz mogą Państwo
+albo dokonać spłaszczenia i klasy Male i Female zawrzeć w klasie Person która przestaje być abstrakcyjna.
+Albo dodać nową klasę która uwzględnia Male i Female oraz kompozycję. W przypadku wieloaspektowego
+na potrzeby MP sugerują opcję ze spłaszczeniem. Na potrzeby egzaminu proszę również poczytać o metodzie z kompozycją.
