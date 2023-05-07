@@ -1,6 +1,7 @@
 package org.example.assocWithAttribute;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -17,6 +18,7 @@ class EmployeeTest {
     }
 
     @Test
+    @DisplayName("Asocjacja z atrybutem test tworzenia pracownika")
     void testEmployeeCreation() {
         assertNotNull(employee);
         assertEquals("Jan Kowalski", employee.getName());
@@ -24,6 +26,7 @@ class EmployeeTest {
     }
 
     @Test
+    @DisplayName("Asocjacja z atrybutem test dodawania historii zatrudnienia")
     void testAddEmploymentHistory() {
         Company company = new Company("ABC");
         LocalDate startDate = LocalDate.of(2020, 1, 1);
@@ -37,6 +40,7 @@ class EmployeeTest {
     }
 
     @Test
+    @DisplayName("Asocjacja z atrybutem test usuwania historii zatrudnienia")
     void testRemoveEmploymentHistory() {
         Company company = new Company("ABC");
         LocalDate startDate = LocalDate.of(2020, 1, 1);

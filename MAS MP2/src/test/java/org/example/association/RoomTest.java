@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RoomTest {
     @Test
-    @DisplayName("Test tworzenia sali z właściwościami")
+    @DisplayName("Asocjacja - test tworzenia sali z właściwościami")
     public void testRoomCreation() {
         // Utwórz nowy budynek
         Building building = new Building();
@@ -23,7 +23,7 @@ class RoomTest {
     }
 
     @Test
-    @DisplayName("Test metody toString() dla klasy Room")
+    @DisplayName("Asocjacja - test metody toString() dla klasy Room")
     public void testRoomToString() {
         // Utwórz nowy budynek
         Building building = new Building();

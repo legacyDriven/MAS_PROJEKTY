@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class BuildingTest {
 
     @Test
-    @DisplayName("Test dodawania sal do budynku")
+    @DisplayName("Asocjacja - test dodawania sal do budynku")
     public void testCreateRoomAndAddToBuilding() {
         // Utwórz nowy budynek
         Building building = new Building();

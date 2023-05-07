@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class OrderTest {
 
     @Test
-    @DisplayName("Test tworzenia zamówienia z właściwościami")
+    @DisplayName("Asocjacja kwalifikowana test tworzenia zamówienia z właściwościami")
     public void testOrderCreation() {
         // Tworzenie klienta
         Customer customer = new Customer();
@@ -22,7 +22,7 @@ class OrderTest {
     }
 
     @Test
-    @DisplayName("Test zmiany właściwości zamówienia")
+    @DisplayName("Asocjacja kwalifikowana test zmiany właściwości zamówienia")
     public void testOrderSetters() {
         // Tworzenie klienta
         Customer customer1 = new Customer();

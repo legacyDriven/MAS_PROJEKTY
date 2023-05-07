@@ -1,30 +1,40 @@
 package org.example.composition;
 
-import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@EqualsAndHashCode
+@Getter
+@ToString
 public class Building {
-    private List<Room> rooms;
+    //
+    private final List<Room> rooms;
 
     public Building() {
-        this.rooms = new ArrayList<>();
+        rooms = new ArrayList<>();
     }
 
-    public Room createRoom(int roomNumber, int capacity) {
-        Room room = new Room(roomNumber, capacity, this);
+    public void addRoom(@NonNull String name, int size) {
+        Room room = new Room(this, name, size);
         rooms.add(room);
-        return room;
     }
 
     public void removeRoom(Room room) {
-        room.setBuilding(null); // remove building reference from the room
+        rooms.stream()
+                .filter(r -> r.equals(room))
+                .findFirst()
+                .ifPresent(r -> r.setBuilding(null));
         rooms.remove(room);
     }
 
-    public List<Room> getRooms() {
-        return rooms;
+    public void removeBuildingAndRooms() {
+        // Ustawiamy referencję budynku na null dla każdego pokoju przed usunięciem
+        for (Room room : rooms) {
+            room.setBuilding(null);
+        }
+        rooms.clear();
     }
 }

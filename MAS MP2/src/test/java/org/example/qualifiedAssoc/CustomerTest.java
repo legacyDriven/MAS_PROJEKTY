@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CustomerTest {
 
     @Test
-    @DisplayName("Test dodawania zamówienia do klienta")
+    @DisplayName("Asocjacja kwalifikowana - test dodawania zamówienia do klienta")
     public void testAddOrderToCustomer() {
         // Tworzenie klienta
         Customer customer = new Customer();
@@ -31,7 +31,7 @@ class CustomerTest {
     }
 
     @Test
-    @DisplayName("Test usuwania zamówienia z klienta")
+    @DisplayName("Asocjacja kwalifikowana - test usuwania zamówienia z klienta")
     public void testRemoveOrderFromCustomer() {
         // Tworzenie klienta
         Customer customer = new Customer();

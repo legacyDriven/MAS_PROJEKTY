@@ -27,7 +27,7 @@ class EmploymentHistoryTest {
     }
 
     @Test
-    @DisplayName("Test employment history creation")
+    @DisplayName("Asocjacja z atrybutem test tworzenia historii zatrudnienia z właściwościami")
     void testEmploymentHistoryCreation() {
         assertNotNull(employmentHistory);
         assertEquals(employee, employmentHistory.getEmployee());
@@ -37,7 +37,7 @@ class EmploymentHistoryTest {
     }
 
     @Test
-    @DisplayName("Test change end date")
+    @DisplayName("Asocjacja z atrybutem test ustawienia daty konca zatrudnienia")
     void testChangeEndDate() {
         LocalDate newEndDate = LocalDate.of(2023, 1, 1);
         employmentHistory.setEndDate(newEndDate);

@@ -18,7 +18,7 @@ class CompanyTest {
     }
 
     @Test
-    @DisplayName("Test company creation")
+    @DisplayName("Asocjacja z atrybutem - test tworzenia firmy")
     void testCompanyCreation() {
         assertNotNull(company);
         assertEquals("ABC", company.getName());
@@ -26,7 +26,7 @@ class CompanyTest {
     }
 
     @Test
-    @DisplayName("Test add employment history")
+    @DisplayName("Asocjacja z atrybutem - test dodawania historii zatrudnienia")
     void testAddEmploymentHistory() {
         Employee employee = new Employee("Jan Kowalski");
         LocalDate startDate = LocalDate.of(2020, 1, 1);
@@ -39,7 +39,7 @@ class CompanyTest {
         assertTrue(company.getEmploymentHistories().contains(employmentHistory));
     }
     @Test
-    @DisplayName("Test remove employment history")
+    @DisplayName("Asocjacja z atrybutem - test usuwania historii zatrudnienia")
     void testRemoveEmploymentHistory() {
         Employee employee = new Employee("Jan Kowalski");
         LocalDate startDate = LocalDate.of(2020, 1, 1);
@@ -50,5 +50,4 @@ class CompanyTest {
         company.removeEmploymentHistory(employmentHistory);
         assertTrue(company.getEmploymentHistories().isEmpty());
     }
-
 }
