@@ -1,6 +1,5 @@
-package org.example.wieloaspektowe;
+package org.example.wieloaspektowe.flat;
 
-import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 
 @FieldDefaults(level = lombok.AccessLevel.PRIVATE)

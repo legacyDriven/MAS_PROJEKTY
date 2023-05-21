@@ -1,4 +1,4 @@
-package org.example.wieloaspektowe;
+package org.example.wieloaspektowe.flat;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
