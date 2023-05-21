@@ -8,7 +8,7 @@ public class Student extends Person {
 
     Integer studentID;
 
-    public Student(@NonNull Gender gender) {
+    public Student(Gender gender) {
         super(gender);
     }
 }
